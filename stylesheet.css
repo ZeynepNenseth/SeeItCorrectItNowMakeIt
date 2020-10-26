@@ -10,13 +10,13 @@ body{
 
 #header {
   width: 100%;
+  height: 150px;
   display: flex;
   flex-direction: row;
   background-color: lightblue;
 }
 #header > #banner {
   width: 100%;
-  border: 1px solid black;
   padding-left: 2%; /* Skrev i prosent, så det ikke er så stort mellomrom dersom vinduet blir smalere */
   background-image: url(img\students.jpg);
 }
@@ -29,9 +29,9 @@ body{
   flex-direction: row;
   list-style-type: none;
 }
-#navbar > ul > a > .navbar_button {
-  
-}
+/*#navbar > ul > a > .navbar_button {
+  Dette er kommentert ut fordi det (foreløpig) ikke inneholder noe kode
+}*/
 #navbar > ul > a > .navbar_button > li {
   text-align: center;
 }
@@ -39,62 +39,165 @@ body{
   width: 100%;
   padding: 10px 0;
   text-decoration: none;
-  background-color: #444444;
+  background-color: #333333;
   color: whitesmoke;
 }
 #navbar > ul > a:visited {
   color: whitesmoke;
 }
 #navbar > ul > a:hover {
-  background-color: #555555;
+  color: red;
 }
 #navbar > ul > a:active {
-  background-color: lightblue;
+  background-color: #444444;
 }
 
-
+#studies_admissions-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+#studies_admissions-wrapper > #studies {
+  width: 50%;
+  padding: 15px;
+  background-color: lightcoral;
+}
 
 /* dropdown content from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover*/
 /* Dropdown Button */
-.dropbtn {
-    background-color: whitesmoke;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #4c7faf;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    width: 100%; /*the width of the dropdown content to be as wide as the dropdown button*/
-    overflow:auto; /*to enable scroll on small screens*/
-  }
-
+#studies_admissions-wrapper > #studies > .dropdown > .dropbtn {
+  background-color: whitesmoke;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+#studies_admissions-wrapper > #studies > .dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+#studies_admissions-wrapper > #studies > .dropdown > .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4c7faf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%; /*the width of the dropdown content to be as wide as the dropdown button*/
+  overflow:auto; /*to enable scroll on small screens*/
+}
 /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+#studies_admissions-wrapper > #studies > .dropdown > .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+#studies_admissions-wrapper > #studies > .dropdown > .dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+/* Change color of dropdown links on hover */
+#studies_admissions-wrapper > #studies > .dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  /* Change color of dropdown links on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#studies_admissions-wrapper > #studies > .dropdown:hover .dropbtn {
+  background-color: rgb(197, 197, 197);
+}
 
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: rgb(197, 197, 197);}
+#studies_admissions-wrapper > #admissions {
+  width: 50%;
+  padding: 15px;
+  background-color: lightgreen;
+}
+#studies_admissions-wrapper > #admissions > h2 > a:link {
+  color: black;
+}
+#studies_admissions-wrapper > #admissions > h2 > a:visited {
+  color: black;
+}
+#studies_admissions-wrapper > #admissions > h2 > a:hover {
+  color: red;
+}
+#studies_admissions-wrapper > #admissions > h2 > a:active {
+  color: darkred;
+}
+
+#academics {
+  padding: 25px 50px;
+  background-color: lightsalmon;
+}
+
+#events_updates-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#events_updates-wrapper > #events {
+  width: 50%;
+  padding: 15px;
+  background-color: lightpink;
+}
+#events_updates-wrapper > #events > h2,
+#events_updates-wrapper > #events > h3 {
+  text-align: center;
+}
+#events_updates-wrapper > #events > table {
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+/* I don't know why, but when I use tr, th, and td, I am unable to use ">" to show HTML path. */
+#events_updates-wrapper > #events > table tr th {
+  padding: 10px 0;
+  text-align: start;
+  font-size: 15pt;
+  border-bottom: 3px solid rgb(255, 124, 143);
+}
+#events_updates-wrapper > #events > table tr td {
+  padding: 10px 0;
+}
+#events_updates-wrapper > #events > table tr td a:link {
+  color: black;
+}
+#events_updates-wrapper > #events > table tr td a:visited {
+  color: black;
+}
+#events_updates-wrapper > #events > table tr td a:hover {
+  color: red;
+}
+#events_updates-wrapper > #events > table tr td a:active {
+  color: darkred;
+}
+#events_updates-wrapper > #updates {
+  width: 50%;
+  padding: 15px;
+  background-color: lightyellow;
+}
+
+#events_updates-wrapper > #updates > h3,
+#events_updates-wrapper > #updates > ul {
+  text-align: center;
+  list-style-type: none;
+}
+#events_updates-wrapper > #updates > ul > li {
+  margin: 15px 5px 5px 20px;
+}
+#events_updates-wrapper > #updates > ul > li > a:link {
+  color: black;
+}
+#events_updates-wrapper > #updates > ul > li > a:visited {
+  color: black;
+}
+#events_updates-wrapper > #updates > ul > li > a:hover {
+  color: red;
+}
+#events_updates-wrapper > #updates > ul > li > a:active {
+  color: darkred;
+}
