@@ -23,6 +23,8 @@ body{
 
 #navbar {
   width: 100%;
+  font-size: 16pt;
+  font-weight: bold;
   position: -webkit-sticky; /* For Safari users */
   position: sticky;
   top: 0;
@@ -65,7 +67,8 @@ body{
 #studies_admissions-wrapper > #studies {
   width: 50%;
   padding: 15px;
-  background-color: lightcoral;
+  background-color: #FA3F00;
+  color: whitesmoke;
 }
 
 /* dropdown content from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover*/
@@ -118,7 +121,7 @@ body{
 #studies_admissions-wrapper > #admissions {
   width: 50%;
   padding: 15px;
-  background-color: lightgreen;
+  background-color: whitesmoke;
 }
 #studies_admissions-wrapper > #admissions > h2 > a:link {
   color: black;
@@ -133,9 +136,34 @@ body{
   color: darkred;
 }
 
-#academics {
-  padding: 25px 50px;
-  background-color: lightsalmon;
+#academics_careers-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#academics_careers-wrapper > #academics {
+  padding: 15px;
+  width: 50%;
+  text-align: center;
+  background-color: whitesmoke;
+}
+#academics_careers-wrapper > #careers {
+  padding: 15px;
+  width: 50%;
+  text-align: center;
+  background-color: #FA3F00;
+}
+#academics_careers-wrapper > #careers a:link {
+  color: whitesmoke;
+}
+#academics_careers-wrapper > #careers a:visited {
+  color: whitesmoke;
+}
+#academics_careers-wrapper > #careers a:hover {
+  color: red;
+}
+#academics_careers-wrapper > #careers a:active {
+  color: darkred;
 }
 
 #events_updates-wrapper {
@@ -146,7 +174,8 @@ body{
 #events_updates-wrapper > #events {
   width: 50%;
   padding: 15px;
-  background-color: lightpink;
+  background-color: #FA3F00;
+  color: whitesmoke;
 }
 #events_updates-wrapper > #events > h2,
 #events_updates-wrapper > #events > h3 {
@@ -182,7 +211,7 @@ body{
 #events_updates-wrapper > #updates {
   width: 50%;
   padding: 15px;
-  background-color: lightyellow;
+  background-color: whitesmoke;
 }
 
 #events_updates-wrapper > #updates > h3,
@@ -204,4 +233,41 @@ body{
 }
 #events_updates-wrapper > #updates > ul > li > a:active {
   color: darkred;
+}
+
+
+#about_contact_footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #333333;
+  color: whitesmoke;
+}
+#about_contact_footer-wrapper > #about {
+  width: 50%;
+  padding: 20px 60px;
+  text-align: center;
+}
+#about_contact_footer-wrapper > #about > p > a:link {
+  color: whitesmoke;
+}
+#about_contact_footer-wrapper > #about > p > a:visited {
+  color: whitesmoke;
+}
+#about_contact_footer-wrapper > #about > p > a:hover {
+  color: red;
+}
+#about_contact_footer-wrapper > #about > p > a:active {
+  color: darkred;
+}
+#about_contact_footer-wrapper > #contact {
+  width: 50%;
+  padding: 20px 60px;
+  text-align: center;
+}
+#about_contact_footer-wrapper > #footer {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  text-align: center;
 }
