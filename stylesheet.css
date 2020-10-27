@@ -10,15 +10,30 @@ body{
 
 #header {
   width: 100%;
-  height: 150px;
+  height: 210px;
   display: flex;
   flex-direction: row;
-  background-color: lightblue;
 }
 #header > #banner {
   width: 100%;
-  padding-left: 2%; /* Skrev i prosent, så det ikke er så stort mellomrom dersom vinduet blir smalere */
-  background-image: url(img\students.jpg);
+  padding-left: 2%;
+  background-image: url("img/students.jpg"); 
+  /* Photo by NESA by Makers on Unsplash. Photo is free to use for commercial and non-commercial purposes without permission */
+  background-repeat: no-repeat;
+  background-color: #AD64CC;
+  background-size: cover;
+}
+#header > #banner > h1 {
+  font-size: 32pt;
+  color: red;
+  text-shadow: 2px 2px black;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+#header > #banner > h2 {
+  font-size: 24pt;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
 }
 
 #navbar {
@@ -35,9 +50,6 @@ body{
   flex-direction: row;
   list-style-type: none;
 }
-/*#navbar > ul > a > .navbar_button {
-  Dette er kommentert ut fordi det (foreløpig) ikke inneholder noe kode
-}*/
 #navbar > ul > a > .navbar_button > li {
   text-align: center;
 }
@@ -67,7 +79,7 @@ body{
 #studies_admissions-wrapper > #studies {
   width: 50%;
   padding: 15px;
-  background-color: #FA3F00;
+  background-color: #AD64CC;
   color: whitesmoke;
 }
 
@@ -77,6 +89,7 @@ body{
   background-color: whitesmoke;
   color: black;
   padding: 16px;
+  margin: 2px 0;
   font-size: 16px;
   border: none;
 }
@@ -105,7 +118,7 @@ body{
 }
 /* Change color of dropdown links on hover */
 #studies_admissions-wrapper > #studies > .dropdown > .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #5CCCBC;
 }
 
 /* Change color of dropdown links on hover */
@@ -115,25 +128,26 @@ body{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 #studies_admissions-wrapper > #studies > .dropdown:hover .dropbtn {
-  background-color: rgb(197, 197, 197);
+  background-color: #5CCCBC;
 }
 
 #studies_admissions-wrapper > #admissions {
   width: 50%;
   padding: 15px;
-  background-color: whitesmoke;
+  background-color: #AD64CC;
+  color: whitesmoke;
 }
 #studies_admissions-wrapper > #admissions > h2 > a:link {
-  color: black;
+  color: whitesmoke;
 }
 #studies_admissions-wrapper > #admissions > h2 > a:visited {
-  color: black;
+  color: whitesmoke;
 }
 #studies_admissions-wrapper > #admissions > h2 > a:hover {
-  color: red;
+  color: #5CCCBC;
 }
 #studies_admissions-wrapper > #admissions > h2 > a:active {
-  color: darkred;
+  color: #4c7faf;
 }
 
 #academics_careers-wrapper {
@@ -147,23 +161,35 @@ body{
   text-align: center;
   background-color: whitesmoke;
 }
+#academics_careers-wrapper > #academics a:link {
+  color: black;
+}
+#academics_careers-wrapper > #academics a:visited {
+  color: black;
+}
+#academics_careers-wrapper > #academics a:hover {
+  color: #AD64CC;
+}
+#academics_careers-wrapper > #academics a:active {
+  color: #CC156A;
+}
 #academics_careers-wrapper > #careers {
   padding: 15px;
   width: 50%;
   text-align: center;
-  background-color: #FA3F00;
+  background-color: whitesmoke;
 }
 #academics_careers-wrapper > #careers a:link {
-  color: whitesmoke;
+  color: black;
 }
 #academics_careers-wrapper > #careers a:visited {
-  color: whitesmoke;
+  color: black;
 }
 #academics_careers-wrapper > #careers a:hover {
-  color: red;
+  color: #AD64CC;
 }
 #academics_careers-wrapper > #careers a:active {
-  color: darkred;
+  color: #CC156A;
 }
 
 #events_updates-wrapper {
@@ -174,8 +200,7 @@ body{
 #events_updates-wrapper > #events {
   width: 50%;
   padding: 15px;
-  background-color: #FA3F00;
-  color: whitesmoke;
+  background-color: #5CCCBC;
 }
 #events_updates-wrapper > #events > h2,
 #events_updates-wrapper > #events > h3 {
@@ -187,11 +212,12 @@ body{
   border-collapse: collapse;
 }
 /* I don't know why, but when I use tr, th, and td, I am unable to use ">" to show HTML path. */
+/* This also applies to other lines in this CSS file, not just tr, th, and td. */
 #events_updates-wrapper > #events > table tr th {
   padding: 10px 0;
   text-align: start;
   font-size: 15pt;
-  border-bottom: 3px solid rgb(255, 124, 143);
+  border-bottom: 3px solid #CC156A;
 }
 #events_updates-wrapper > #events > table tr td {
   padding: 10px 0;
@@ -203,18 +229,22 @@ body{
   color: black;
 }
 #events_updates-wrapper > #events > table tr td a:hover {
-  color: red;
+  color: #CC156A;
 }
 #events_updates-wrapper > #events > table tr td a:active {
-  color: darkred;
+  color: red;
 }
 #events_updates-wrapper > #updates {
   width: 50%;
   padding: 15px;
-  background-color: whitesmoke;
+  background-color: #5CCCBC;
+  text-align: center;
 }
 
-#events_updates-wrapper > #updates > h3,
+#events_updates-wrapper > #updates > h2, h3 {
+  text-align: center;
+  
+}
 #events_updates-wrapper > #updates > ul {
   text-align: center;
   list-style-type: none;
@@ -229,12 +259,11 @@ body{
   color: black;
 }
 #events_updates-wrapper > #updates > ul > li > a:hover {
-  color: red;
+  color: #CC156A;
 }
 #events_updates-wrapper > #updates > ul > li > a:active {
-  color: darkred;
+  color: red;
 }
-
 
 #about_contact_footer-wrapper {
   width: 100%;
@@ -242,6 +271,9 @@ body{
   flex-flow: row wrap;
   background-color: #333333;
   color: whitesmoke;
+}
+#about_contact_footer-wrapper h2 {
+  color: red;
 }
 #about_contact_footer-wrapper > #about {
   width: 50%;
@@ -264,6 +296,18 @@ body{
   width: 50%;
   padding: 20px 60px;
   text-align: center;
+}
+#about_contact_footer-wrapper > #contact a:link {
+  color: whitesmoke;
+}
+#about_contact_footer-wrapper > #contact a:visited {
+  color: whitesmoke;
+}
+#about_contact_footer-wrapper > #contact a:hover {
+  color: red;
+}
+#about_contact_footer-wrapper > #contact a:active {
+  color: darkred;
 }
 #about_contact_footer-wrapper > #footer {
   width: 100%;
