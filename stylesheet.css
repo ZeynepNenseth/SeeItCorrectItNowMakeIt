@@ -23,6 +23,10 @@ body{
 
 #navbar {
   width: 100%;
+  position: -webkit-sticky; /* For Safari users */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 #navbar > ul {
   display: flex;
