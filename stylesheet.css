@@ -234,7 +234,7 @@ body{
   border-bottom: 4px solid #CC156A;
 }
 #events_updates-wrapper > #events > table tr td {
-  padding: 10px 0;
+  padding: 10px 10px 10px 0;
 }
 #events_updates-wrapper > #events > table tr td a:link {
   color: black;
@@ -336,4 +336,100 @@ body{
   padding: 15px;
   margin-top: 10px;
   text-align: center;
+}
+
+
+/* ------PHONE CONFIG------ */
+
+@media only screen and (max-width: 1080px) {
+  #header {
+    height: 100px;
+  }
+  #header > #logo > img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #header > #banner > h1 {
+    margin-top: 10px;
+    font-size: 20pt;
+    text-shadow: 1.5px 1.5px black;
+  }
+  #header > #banner > h2 {
+    font-size: 17.5pt;
+    text-shadow: 1.5px 1.5px black;
+  }
+
+  #navbar {
+    position: static;
+    background-color: #333333;
+    font-size: 16pt;
+  }
+  #navbar > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #navbar > ul > a:link {
+    width: 50%;
+    padding: 5px 0;
+  }
+
+  #studies_admissions-wrapper > #studies {
+    width: 100%;
+  }
+  #studies_admissions-wrapper > #studies > .dropdown > .dropdown-content {
+    min-width: 120px;
+  }
+
+  #studies_admissions-wrapper > #admissions {
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+  }
+  #studies_admissions-wrapper > #admissions h2 a:link {
+    color: black;
+  }
+  #studies_admissions-wrapper > #admissions h2 a:visited {
+    color: black;
+  }
+  #studies_admissions-wrapper > #admissions h2 a:hover {
+    color: #AD64CC;
+  }
+  #studies_admissions-wrapper > #admissions h2 a:active {
+    color: #CC156A;
+  }
+
+  #academics_careers-wrapper > #academics {
+    width: 100%;
+    background-color: #5CCCBC;
+  }
+
+  #academics_careers-wrapper > #careers {
+    width: 100%;
+    background-color: #AD64CC;
+  }
+  #academics_careers-wrapper > #careers a:link {
+    color: black;
+  }
+  #academics_careers-wrapper > #careers a:visited {
+    color: black;
+  }
+  #academics_careers-wrapper > #careers a:hover {
+    color: #5CCCBC;
+  }
+  #academics_careers-wrapper > #careers a:active {
+    color: red;
+  }
+
+  #events_updates-wrapper > #events {
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  #events_updates-wrapper > #updates,
+  #about_contact_footer-wrapper > #about,
+  #about_contact_footer-wrapper > #contact {
+    width: 100%;
+  }
+  
 }
