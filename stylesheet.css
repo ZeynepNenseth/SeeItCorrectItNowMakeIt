@@ -41,8 +41,6 @@ body{
   width: 100%;
   font-size: 16pt;
   font-weight: bold;
-  position: -webkit-sticky; /* For Safari users */
-  position: sticky;
   top: 0;
   z-index: 1;
 }
